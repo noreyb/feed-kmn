@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "feed-kmn"
+version = "0.1.0"
+description = ""
+authors = ["noreyb <disce_uno@yahoo.co.jp>"]
+readme = "README.md"
+packages = [{include = "feed_kmn"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyyaml = "^6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
