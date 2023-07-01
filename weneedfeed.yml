@@ -1,0 +1,621 @@
+selectors: &selectors
+  item_selector: article
+  item_image_selector: img
+  item_link_selector: a
+  item_time_selector: time
+  item_title_selector: .post-card__header
+
+title: kmn
+
+pages:
+  - id: higashiyama_show
+    title: higashiyama_show
+    url: https://kemono.su/fanbox/user/514180
+    <<: *selectors
+  - id: tottotonero
+    title: tottotonero
+    url: https://kemono.su/fanbox/user/5342006
+    <<: *selectors
+  - id: umekko
+    title: umekko
+    url: https://kemono.su/fanbox/user/4055454
+    <<: *selectors
+  - id: sanuki
+    title: sanuki
+    url: https://kemono.su/fanbox/user/9888246
+    <<: *selectors
+  - id: sasha_and_shisho
+    title: sasha_and_shisho
+    url: https://kemono.su/fanbox/user/7859107
+    <<: *selectors
+  - id: saebashi
+    title: saebashi
+    url: https://kemono.su/fanbox/user/986563
+    <<: *selectors
+  - id: nanakichi
+    title: nanakichi
+    url: https://kemono.su/fanbox/user/733761
+    <<: *selectors
+  - id: rebis
+    title: rebis
+    url: https://kemono.su/fanbox/user/28196
+    <<: *selectors
+  - id: dhseijin
+    title: dhseijin
+    url: https://kemono.su/fanbox/user/9403559
+    <<: *selectors
+  - id: hidarikiki
+    title: hidarikiki
+    url: https://kemono.su/patreon/user/5893088
+    <<: *selectors
+  - id: edaha
+    title: edaha
+    url: https://kemono.su/fanbox/user/70693825
+    <<: *selectors
+  - id: kaedeko
+    title: kaedeko
+    url: https://kemono.su/fanbox/user/20871532
+    <<: *selectors
+  - id: serakichi
+    title: serakichi
+    url: https://kemono.su/fanbox/user/2196994
+    <<: *selectors
+  - id: himitunisitoite
+    title: himitunisitoite
+    url: https://kemono.su/fanbox/user/4830551
+    <<: *selectors
+  - id: kagto
+    title: kagto
+    url: https://kemono.su/fanbox/user/34025740
+    <<: *selectors
+  - id: mochimochihoppe
+    title: mochimochihoppe
+    url: https://kemono.su/fanbox/user/38539862
+    <<: *selectors
+  - id: esuyuz
+    title: esuyuz
+    url: https://kemono.su/fanbox/user/291608
+    <<: *selectors
+  - id: saltpeter
+    title: saltpeter
+    url: https://kemono.su/fanbox/user/34475243
+    <<: *selectors
+  - id: kurumahajime
+    title: kurumahajime
+    url: https://kemono.su/fanbox/user/8576
+    <<: *selectors
+  - id: rororo-mg
+    title: roror-mg
+    url: https://kemono.su/fanbox/user/25825853
+    <<: *selectors
+  - id: shincho_kosatsu
+    title: shincho_kosatsu
+    url: https://kemono.su/fantia/user/1419
+    <<: *selectors
+  - id: kikimihukuri
+    title: kikimihukuri
+    url: https://kemono.su/fanbox/user/5737831
+    <<: *selectors
+  - id: sessyu
+    title: sessyu
+    url: https://kemono.su/fanbox/user/26357
+    <<: *selectors
+  - id: mushi024
+    title: mushi024
+    url: https://kemono.su/patreon/user/500429
+    <<: *selectors
+  - id: numatachihiro
+    title: numatachihiro
+    url: https://kemono.su/fantia/user/7169
+    <<: *selectors
+  - id: corundum
+    title: corundum
+    url: https://kemono.su/fanbox/user/17778544
+    <<: *selectors
+  - id: murian
+    title: murian
+    url: https://kemono.su/fanbox/user/1336152
+    <<: *selectors
+  - id: jungle
+    title: jungle
+    url: https://kemono.su/fanbox/user/3255968
+    <<: *selectors
+  - id: uru0000
+    title: uru0000
+    url: https://kemono.su/patreon/user/221372
+    <<: *selectors
+  - id: yeun
+    title: yeun
+    url: https://kemono.su/fanbox/user/70955548
+    <<: *selectors
+  - id: kaoming
+    title: kaoming
+    url: https://kemono.su/fanbox/user/1236873
+    <<: *selectors
+  - id: sanagitorajiro
+    title: sanagitorajiro
+    url: https://kemono.su/fanbox/user/1219153
+    <<: *selectors
+  - id: simao
+    title: simao
+    url: https://kemono.su/fanbox/user/49759620
+    <<: *selectors
+  - id: nitama_tsukasa
+    title: nitama_tsukasa
+    url: https://kemono.su/fanbox/user/37633288
+    <<: *selectors
+  - id: kawaraya
+    title: kawaraya
+    url: https://kemono.su/fanbox/user/14074088
+    <<: *selectors
+  - id: kusayarou
+    title: kusayarou
+    url: https://kemono.su/fanbox/user/13248513
+    <<: *selectors
+  - id: chinzuri_bop
+    title: chinzuri_bop
+    url: https://kemono.su/dlsite/user/RG13809
+    <<: *selectors
+  - id: nananana
+    title: nananana
+    url: https://kemono.su/fanbox/user/24571
+    <<: *selectors
+  - id: buta_jiman
+    title: buta_jiman
+    url: https://kemono.su/fanbox/user/30902737
+    <<: *selectors
+  - id: whywhyman
+    title: whywhyman
+    url: https://kemono.su/fanbox/user/3738677
+    <<: *selectors
+  - id: momokumo
+    title: momokumo
+    url: https://kemono.su/fanbox/user/29502669
+    <<: *selectors
+  - id: yamada
+    title: yamada
+    url: https://kemono.su/fanbox/user/1769484
+    <<: *selectors
+  - id: tantanmen
+    title: tantanmen
+    url: https://kemono.su/fanbox/user/7342308
+    <<: *selectors
+  - id: kiiroi_tamago
+    title: kiiroi_tamago
+    url: https://kemono.su/fanbox/user/1218369
+    <<: *selectors
+  - id: raoko
+    title: raoko
+    url: https://kemono.su/fanbox/user/75817563
+    <<: *selectors
+  - id: hayanye-r
+    title: hayanye-r
+    url: https://kemono.su/fanbox/user/39182623
+    <<: *selectors
+  - id: wakame_san
+    title: wakame_san
+    url: https://kemono.su/fanbox/user/4368958
+    <<: *selectors
+  - id: shimada_fumikane
+    title: shimada_fumikane
+    url: https://kemono.su/fantia/user/319092
+    <<: *selectors
+  - id: terasumc
+    title: terasumc
+    url: https://kemono.su/fanbox/user/11701235
+    <<: *selectors
+  - id: mochirong
+    title: mochirong
+    url: https://kemono.su/fanbox/user/6005584
+    <<: *selectors
+  - id: ayanami00menasu7
+    title: ayanami00menasu7
+    url: https://kemono.su/fanbox/user/19771543
+    <<: *selectors
+  - id: gomiri
+    title: gomiri
+    url: https://kemono.su/fanbox/user/25334163
+    <<: *selectors
+  - id: mamimi
+    title: mamimi
+    url: https://kemono.su/fanbox/user/17151277
+    <<: *selectors
+  - id: naze
+    title: naze
+    url: https://kemono.su/patreon/user/16247447
+    <<: *selectors
+  - id: minakamin90
+    title: minakamin90
+    url: https://kemono.su/fanbox/user/3974618
+    <<: *selectors
+  - id: emarson
+    title: emarson
+    url: https://kemono.su/fantia/user/18730
+    <<: *selectors
+  - id: marse
+    title: marse
+    url: https://kemono.su/fanbox/user/45431975
+    <<: *selectors
+  - id: mobu45
+    title: mobu45
+    url: https://kemono.su/fanbox/user/62922860
+    <<: *selectors
+  - id: dareduka
+    title: dareduka
+    url: https://kemono.su/fanbox/user/10054554
+    <<: *selectors
+  - id: takashima
+    title: takashima
+    url: https://kemono.su/fanbox/user/82295273
+    <<: *selectors
+  - id: dododo_chan
+    title: dododo_chan
+    url: https://kemono.su/fanbox/user/3749780
+    <<: *selectors
+  - id: koh_minagi
+    title: koh_minagi
+    url: https://kemono.su/fanbox/user/1336451
+    <<: *selectors
+  - id: traya
+    title: traya
+    url: https://kemono.su/fanbox/user/28197354
+    <<: *selectors
+  - id: kuragari
+    title: kuragari
+    url: https://kemono.party/fanbox/user/38082
+    <<: *selectors
+  - id: abubu_nownanka
+    title: abubu_nownanka
+    url: https://kemono.su/fanbox/user/103703
+    <<: *selectors
+  - id: abfurai
+    title: abufurai
+    url: https://kemono.su/fanbox/user/26452890
+    <<: *selectors
+  - id: marukorondo
+    title: marukorondo
+    url: https://kemono.su/fantia/user/5690
+    <<: *selectors
+  - id: junshain_inoue
+    title: junshain_inoue
+    url: https://kemono.su/fanbox/user/26695379
+    <<: *selectors
+  - id: aikawa_arika
+    title: aikawa_arika
+    url: https://kemono.su/fanbox/user/58721796
+    <<: *selectors
+  - id: eno-enokiya
+    title: eno-enokiya
+    url: https://kemono.su/fanbox/user/6512194
+    <<: *selectors
+  - id: nabie_haruka2t
+    title: nabie_haruka2t
+    url: https://kemono.su/fanbox/user/3959201
+    <<: *selectors
+  - id: tokoyama_keita
+    title: tokoyama_keita
+    url: https://kemono.su/fantia/user/173796
+    <<: *selectors
+  - id: uranouraura
+    title: uranouraura
+    url: https://kemono.su/fantia/user/33597
+    <<: *selectors
+  - id: a-k
+    title: a-k
+    url: https://kemono.su/fanbox/user/58036824
+    <<: *selectors
+  - id: niro26
+    title: niro26
+    url: https://kemono.su/fanbox/user/194231
+    <<: *selectors
+  - id: hagger
+    title: hagger
+    url: https://kemono.party/fanbox/user/554400
+    <<: *selectors
+  - id: kemuri_haku
+    title: kemuri_haku
+    url: https://kemono.party/fanbox/user/3720688
+    <<: *selectors
+  - id: yanekouta
+    title: yanekouta
+    url: https://kemono.party/fanbox/user/10594960
+    <<: *selectors
+  - id: madoufu
+    title: madoufu
+    url: https://kemono.party/fanbox/user/65714270
+    <<: *selectors
+  - id: bakachikubi
+    title: bakachikubi
+    url: https://kemono.party/fanbox/user/12306422
+    <<: *selectors
+  - id: c_ta
+    title: c_ta
+    url: https://kemono.party/fanbox/user/10621360
+    <<: *selectors
+  - id: upanishinuruchiku
+    title: upanishinuruchiku
+    url: https://kemono.party/fantia/user/1903
+    <<: *selectors
+  - id: kujia
+    title: kujia
+    url: https://kemono.party/fanbox/user/1651577
+    <<: *selectors
+  - id: goregrind
+    title: goregrind
+    url: https://kemono.party/fanbox/user/21301506
+    <<: *selectors
+  - id: nagoyama
+    title: nagoyama
+    url: https://kemono.party/fanbox/user/3874915
+    <<: *selectors
+  - id: neisan
+    title: neisan
+    url: https://kemono.party/fanbox/user/52306507
+    <<: *selectors
+  - id: niginigirabbit
+    title: niginigirabbit
+    url: https://kemono.party/fanbox/user/45081727
+    <<: *selectors
+  - id: iwao178
+    title: iwao178
+    url: https://kemono.party/fanbox/user/8572418
+    <<: *selectors
+  - id: iwao178
+    title: iwao178
+    url: https://kemono.party/fanbox/user/8572418
+    <<: *selectors
+  - id: ogreillust
+    title: ogreillust
+    url: https://kemono.party/fanbox/user/34368621
+    <<: *selectors
+    title: tedain
+    url: https://kemono.party/fanbox/user/884704
+    <<: *selectors
+  - id: mana
+    title: mana
+    url: https://kemono.party/fanbox/user/3015512
+    <<: *selectors
+  - id: mamerakko
+    title: mamerakko
+    url: https://kemono.party/fantia/user/27264
+    <<: *selectors
+  - id: satsume_soutaro
+    title: satsume_soutaro
+    url: https://kemono.party/fanbox/user/13091797
+    <<: *selectors
+  - id: osoba3gou
+    title: osoba3gou
+    url: https://kemono.party/fanbox/user/83773269
+    <<: *selectors
+  - id: totoro_n
+    title: totoro_n
+    url: https://kemono.party/fanbox/user/13308114
+    <<: *selectors
+  - id: bubukka
+    title: bubukka
+    url: https://kemono.party/fanbox/user/2915585
+    <<: *selectors
+  - id: zankuro
+    title: zankuro
+    url: https://kemono.party/fantia/user/4384
+    <<: *selectors
+  - id: takato_kurosuke
+    title: takato_kurosuke
+    url: https://kemono.party/fanbox/user/596129
+    <<: *selectors
+  - id: kishisato_satoshi
+    title: kishisato_satoshi
+    url: https://kemono.party/fanbox/user/37285428
+    <<: *selectors
+  - id: chimosaku
+    title: chimosaku
+    url: https://kemono.party/fanbox/user/42317
+    <<: *selectors
+  - id: fukuneko
+    title: fukuneko
+    url: https://kemono.party/fanbox/user/65772163
+    <<: *selectors
+  - id: amelialtie
+    title: amelialtie
+    url: https://kemono.party/fantia/user/133385
+    <<: *selectors
+  - id: aomizuan
+    title: aomizuan
+    url: https://kemono.party/fanbox/user/473275
+    <<: *selectors
+  - id: sakuno14
+    title: sakuno14
+    url: https://kemono.party/fanbox/user/24328727
+    <<: *selectors
+  - id: mochizukimochio
+    title: mochizukimochio
+    url: https://kemono.party/fanbox/user/35928158
+    <<: *selectors
+  - id: sansan
+    title: sansan
+    url: https://kemono.party/fantia/user/478950
+    <<: *selectors
+  - id: zettai_yarumoni
+    title: zettai_yarumoni
+    url: https://kemono.party/fantia/user/159697
+    <<: *selectors
+  - id: kizibato123go
+    title: kizibato123go
+    url: https://kemono.party/fanbox/user/41144430
+    <<: *selectors
+  - id: uchiwa
+    title: uchiwa
+    url: https://kemono.party/fanbox/user/11430485
+    <<: *selectors
+  - id: zikataro
+    title: zikataro
+    url: https://kemono.party/fanbox/user/17294058
+    <<: *selectors
+  - id: redram3104
+    title: redram3104
+    url: https://kemono.party/fanbox/user/9748424
+    <<: *selectors
+  - id: oyari_ashito
+    title: oyari_ashito
+    url: https://kemono.party/fanbox/user/13135
+    <<: *selectors
+  - id: hanetobu
+    title: hanetobu
+    url: https://kemono.party/fanbox/user/2835177
+    <<: *selectors
+  - id: sabamizore
+    title: sabamizore
+    url: https://kemono.party/fanbox/user/29258597
+    <<: *selectors
+  - id: tanakanomiso
+    title: tanakanomiso
+    url: https://kemono.party/fanbox/user/75580452
+    <<: *selectors
+  - id: kiru
+    title: kiru
+    url: https://kemono.party/fanbox/user/2101861
+    <<: *selectors
+  - id: shift
+    title: shift
+    url: https://kemono.party/fanbox/user/389873
+    <<: *selectors
+  - id: takemune
+    title: takemune
+    url: https://kemono.party/fanbox/user/31765899
+    <<: *selectors
+  - id: muk_monsieur
+    title: muk_monsieur
+    url: https://kemono.party/fanbox/user/4234383
+    <<: *selectors
+  - id: kbrg
+    title: kbrg
+    url: https://kemono.party/fanbox/user/17908954
+    <<: *selectors
+  - id: madana90962
+    title: madana90962
+    url: https://kemono.party/fanbox/user/63608651
+    <<: *selectors
+  - id: ankoman
+    title: ankoman
+    url: https://kemono.party/fanbox/user/2004088
+    <<: *selectors
+  - id: sincos
+    title: sincos
+    url: https://kemono.party/fanbox/user/11229342
+    <<: *selectors
+  - id: atte_nanakusa
+    title: atte_nanakusa
+    url: https://kemono.party/fantia/user/15335
+    <<: *selectors
+  - id: ninoriko
+    title: ninoriko
+    url: https://kemono.party/fanbox/user/34805079
+    <<: *selectors
+  - id: mikomune
+    title: mikomune
+    url: https://kemono.party/fanbox/user/402965
+    <<: *selectors
+  - id: toraisi666
+    title: toraisi666
+    url: https://kemono.party/fanbox/user/2886368
+    <<: *selectors
+  - id: moisuturechichi
+    title: moisuturechichi
+    url: https://kemono.party/patreon/user/3977850
+    <<: *selectors
+  - id: poriuretandayo
+    title: poriuretandayo
+    url: https://kemono.party/fanbox/user/19417472
+    <<: *selectors
+  - id: modare
+    title: modare
+    url: https://kemono.party/fanbox/user/1878082
+    <<: *selectors
+  - id: coro
+    title: coro
+    url: https://kemono.party/patreon/user/73150554
+    <<: *selectors
+  - id: zerobyte
+    title: zerobyte
+    url: https://kemono.party/fanbox/user/13545
+    <<: *selectors
+  - id: dorontabi
+    title: dorontabi
+    url: https://kemono.party/fanbox/user/55392960
+    <<: *selectors
+  - id: flanvia
+    title: flanvia
+    url: https://kemono.party/fanbox/user/3267576
+    <<: *selectors
+  - id: aki
+    title: aki
+    url: https://kemono.party/fanbox/user/42154576
+    <<: *selectors
+  - id: iku
+    title: iku
+    url: https://kemono.party/fanbox/user/5476137
+    <<: *selectors
+  - id: pumpkinspice
+    title: pumpkinspice
+    url: https://kemono.party/fanbox/user/16105069
+    <<: *selectors
+  - id: toru
+    title: toru
+    url: https://kemono.party/fanbox/user/18113761
+    <<: *selectors
+  - id: sasanoha_toro
+    title: sasanoha_toro
+    url: https://kemono.party/fanbox/user/1437994
+    <<: *selectors
+  - id: yamada_tarou
+    title: yamada_tarou
+    url: https://kemono.party/fanbox/user/69886081
+    <<: *selectors
+  - id: yamaishi
+    title: yamaishi
+    url: https://kemono.party/fanbox/user/1184398
+    <<: *selectors
+  - id: huruyama_tsukuru
+    title: huruyama_tsukuru
+    url: https://kemono.party/fanbox/user/42423091
+    <<: *selectors
+  - id: yamashita_kurowo
+    title: yamashita_kurowo
+    url: https://kemono.party/fanbox/user/6069
+    <<: *selectors
+  - id: uyama_hajime
+    title: uyama_hajime
+    url: https://kemono.party/fanbox/user/19786106
+    <<: *selectors
+  - id: sumitomo
+    title: sumitomo
+    url: https://kemono.party/fanbox/user/26268578
+    <<: *selectors
+  - id: ibukichi
+    title: ibukichi
+    url: https://kemono.party/fanbox/user/14871
+    <<: *selectors
+  - id: ryokuchamichi
+    title: ryokuchamichi
+    url: https://kemono.party/fanbox/user/30688977
+    <<: *selectors
+  - id: qow213
+    title: qow213
+    url: https://kemono.su/fanbox/user/6676101
+    <<: *selectors
+  - id: kisou
+    title: kisou
+    url: https://kemono.su/patreon/user/37143864
+    <<: *selectors
+  - id: pjanissimo
+    title: pjanissimo
+    url: https://kemono.su/fanbox/user/191346
+    <<: *selectors
+  - id: jakudenpa
+    title: jakudenpa
+    url: https://kemono.su/fantia/user/7
+    <<: *selectors
+  - id: kurosugatari
+    title: kurosugatari
+    url: https://kemono.su/fanbox/user/13472044
+    <<: *selectors
