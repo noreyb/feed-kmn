@@ -8,6 +8,16 @@ on:
     - cron: "0 15 * * *"
 
 jobs:
+  update:
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - uses: Gr1N/setup-poetry@v8
+      - uses: actions/upload-pages-artifact@v1
+      - run: poetry --version
+
   build:
     runs-on: ubuntu-22.04
     steps:

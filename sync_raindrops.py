@@ -6,7 +6,6 @@ import os
 from urllib.parse import urlparse
 import pykakasi
 import re
-import sys
 
 
 def get_from_raindrop(collection_id):
@@ -130,8 +129,12 @@ if __name__ == "__main__":
 
     # sort pages
     pages = sorted(feeds["pages"], key=lambda x: x["id"])
-    pages = list({page["id"]: page for page in pages}.values())
+    pages = list({page["url"]: page for page in pages}.values())
     feeds["pages"] = pages
+    print(len(feeds["pages"]))
+
+    # remove duplicated
+    # feeds["pages"] = list({page["url"]: page for page in feeds["pages"]}.values())
 
     with open("weneedfeed.yml", "w") as f:
         yaml.dump(feeds, f, encoding="utf-8", allow_unicode=True)
