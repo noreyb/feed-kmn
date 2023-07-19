@@ -17,7 +17,7 @@ jobs:
           python-version: "3.11"
       - uses: Gr1N/setup-poetry@v8
       - run: poetry install --no-root
-      - run: poetry run python sync_raindrops.py
+      - run: RAINDROPIO_ACCESS_TOKEN=${{secrets.RAINDROPIO_ACCESS_TOKEN}} UNMARK=${{secrets.UNMARK}} MARKED=${{secrets.MARKED}} poetry run python sync_raindrops.py
 
   build:
     needs: update
