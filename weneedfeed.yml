@@ -1487,15 +1487,31 @@ pages:
   item_title_selector: .post-card__header
   title: zanburotta
   url: https://kemono.su/fantia/user/16047
-- id: zankuroo
+- id: tsubame
   item_image_selector: img
   item_link_selector: a
   item_selector: article
   item_time_selector: time
   item_title_selector: .post-card__header
-  title: zankuroo
-  url: https://kemono.su/fantia/user/4384
-- id: zerobyte
+  title: tsubame
+  url: https://kemono.party/fanbox/user/13659153
+- id: fuchitoro
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: fuchitoro
+  url: https://kemono.party/fanbox/user/2502532
+- id: shiborikasu
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: shiborikasu
+  url: https://kemono.party/fanbox/user/5590667
+- id: jabarand
   item_image_selector: img
   item_link_selector: a
   item_selector: article
