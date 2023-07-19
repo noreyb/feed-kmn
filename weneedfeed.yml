@@ -1366,7 +1366,7 @@ pages:
   item_time_selector: time
   item_title_selector: .post-card__header
   title: fuchitoro
-  url: https://www.kemono.party/fanbox/user/2502532
+  url: https://kemono.party/fanbox/user/2502532
 - id: shiborikasu
   item_image_selector: img
   item_link_selector: a
@@ -1374,7 +1374,7 @@ pages:
   item_time_selector: time
   item_title_selector: .post-card__header
   title: shiborikasu
-  url: https://www.kemono.party/fanbox/user/5590667
+  url: https://kemono.party/fanbox/user/5590667
 - id: jabarand
   item_image_selector: img
   item_link_selector: a
