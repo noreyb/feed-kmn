@@ -16,6 +16,7 @@ jobs:
         with:
           python-version: "3.11"
       - uses: Gr1N/setup-poetry@v8
+      - run: poetry install
       - run: poetry run python sync_raindrops.py
 
   build:
