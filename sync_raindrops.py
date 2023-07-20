@@ -1,11 +1,12 @@
-import requests
+import os
+import re
 import time
+from urllib.parse import urlparse
+
+import pykakasi
+import requests
 import yaml
 from dotenv import load_dotenv
-import os
-from urllib.parse import urlparse
-import pykakasi
-import re
 
 
 def get_from_raindrop(collection_id):
@@ -13,7 +14,7 @@ def get_from_raindrop(collection_id):
     endpoint = "/raindrops"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {access_token}"
+        "Authorization": f"Bearer {access_token}",
     }
     query = {
         "perpage": 50,
@@ -38,7 +39,7 @@ def move_marked_raindrop(collection_id, items, marked):
     endpoint = "/raindrops"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {access_token}"
+        "Authorization": f"Bearer {access_token}",
     }
     query = {
         # "sort": "domain",
@@ -66,7 +67,7 @@ def move_marked_raindrop(collection_id, items, marked):
     return resp
 
 
-def unify_userdata(username):
+def unify_username(username):
     # name to id
     kakasi = pykakasi.kakasi()
     kakasi.setMode("H", "a")
@@ -81,8 +82,6 @@ def unify_userdata(username):
 
 
 if __name__ == "__main__":
-    # Raindrop
-    # Load env
     load_dotenv()
 
     with open("weneedfeed.yml", "r") as f:
@@ -92,16 +91,17 @@ if __name__ == "__main__":
     for feed in feeds["pages"]:
         feed["url"] = feed["url"].replace("party", "su")
 
+    # Get unmarked raindrops
     access_token = os.getenv("RAINDROPIO_ACCESS_TOKEN")
     unmark = int(os.getenv("UNMARK"))  # collection_id
     marked = int(os.getenv("MARKED"))
 
-    # Get unmarked raindrops
     resp = get_from_raindrop(unmark)
     if resp.json()["count"] == 0:
         print("There is no unmark raindrops")
         exit()
 
+    # Get kemono.su raindrops
     raindrops = []
     for item in resp.json()["items"]:
         if "kemono" not in item["domain"]:
@@ -110,17 +110,17 @@ if __name__ == "__main__":
         parsed = urlparse(item["link"])
         service = parsed.path.split("/")[1]
         _id = parsed.path.split("/")[3]
-        username = unify_userdata(item["title"].split(" ")[2])
+        username = unify_username(item["title"].split(" ")[2])
 
         page = {
-            'id': f"{username}",
-            'item_image_selector': 'img',
-            'item_link_selector': 'a',
-            'item_selector': 'article',
-            'item_time_selector': 'time',
-            'item_title_selector': '.post-card__header',
-            'title': f"{username}",
-            'url': f"https://kemono.su/{service}/user/{_id}",
+            "id": f"{username}",
+            "item_image_selector": "img",
+            "item_link_selector": "a",
+            "item_selector": "article",
+            "item_time_selector": "time",
+            "item_title_selector": ".post-card__header",
+            "title": f"{username}",
+            "url": f"https://kemono.su/{service}/user/{_id}",
         }
         feeds["pages"].append(page)
         raindrops.append(item["_id"])
@@ -132,9 +132,6 @@ if __name__ == "__main__":
     pages = list({page["url"]: page for page in pages}.values())
     feeds["pages"] = pages
     print(len(feeds["pages"]))
-
-    # remove duplicated
-    # feeds["pages"] = list({page["url"]: page for page in feeds["pages"]}.values())
 
     with open("weneedfeed.yml", "w") as f:
         yaml.dump(feeds, f, encoding="utf-8", allow_unicode=True)
