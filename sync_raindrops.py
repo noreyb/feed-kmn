@@ -66,7 +66,7 @@ def move_marked_raindrop(collection_id, items, marked):
     return resp
 
 
-def unify_userdata(username):
+def unify_username(username):
     # name to id
     kakasi = pykakasi.kakasi()
     kakasi.setMode("H", "a")
@@ -110,7 +110,7 @@ if __name__ == "__main__":
         parsed = urlparse(item["link"])
         service = parsed.path.split("/")[1]
         _id = parsed.path.split("/")[3]
-        username = unify_userdata(item["title"].split(" ")[2])
+        username = unify_username(item["title"].split(" ")[2])
 
         page = {
             'id': f"{username}",
