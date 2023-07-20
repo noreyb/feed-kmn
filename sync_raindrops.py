@@ -81,8 +81,6 @@ def unify_username(username):
 
 
 if __name__ == "__main__":
-    # Raindrop
-    # Load env
     load_dotenv()
 
     with open("weneedfeed.yml", "r") as f:
@@ -92,16 +90,17 @@ if __name__ == "__main__":
     for feed in feeds["pages"]:
         feed["url"] = feed["url"].replace("party", "su")
 
+    # Get unmarked raindrops
     access_token = os.getenv("RAINDROPIO_ACCESS_TOKEN")
     unmark = int(os.getenv("UNMARK"))  # collection_id
     marked = int(os.getenv("MARKED"))
 
-    # Get unmarked raindrops
     resp = get_from_raindrop(unmark)
     if resp.json()["count"] == 0:
         print("There is no unmark raindrops")
         exit()
 
+    # Get kemono.su raindrops
     raindrops = []
     for item in resp.json()["items"]:
         if "kemono" not in item["domain"]:
@@ -132,9 +131,6 @@ if __name__ == "__main__":
     pages = list({page["url"]: page for page in pages}.values())
     feeds["pages"] = pages
     print(len(feeds["pages"]))
-
-    # remove duplicated
-    # feeds["pages"] = list({page["url"]: page for page in feeds["pages"]}.values())
 
     with open("weneedfeed.yml", "w") as f:
         yaml.dump(feeds, f, encoding="utf-8", allow_unicode=True)
