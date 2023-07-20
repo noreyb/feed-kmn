@@ -319,6 +319,14 @@ pages:
   item_title_selector: .post-card__header
   title: hayanye_r
   url: https://kemono.su/fanbox/user/39182623
+- id: hazamarevi
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: hazamarevi
+  url: https://kemono.su/fanbox/user/4708058
 - id: hidarikiki
   item_image_selector: img
   item_link_selector: a
@@ -407,6 +415,14 @@ pages:
   item_title_selector: .post-card__header
   title: jabarand
   url: https://kemono.su/fanbox/user/5739884
+- id: jabarand
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: zerobyte
+  url: https://kemono.su/fanbox/user/13545
 - id: jakudenpa
   item_image_selector: img
   item_link_selector: a
@@ -735,14 +751,6 @@ pages:
   item_title_selector: .post-card__header
   title: moisuturechichi
   url: https://kemono.su/patreon/user/3977850
-- id: touun
-  item_image_selector: img
-  item_link_selector: a
-  item_selector: article
-  item_time_selector: time
-  item_title_selector: .post-card__header
-  title: touun
-  url: https://kemono.su/fanbox/user/29502669
 - id: mudoochi
   item_image_selector: img
   item_link_selector: a
@@ -1319,6 +1327,14 @@ pages:
   item_title_selector: .post-card__header
   title: tottotonero
   url: https://kemono.su/fanbox/user/5342006
+- id: touun
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: touun
+  url: https://kemono.su/fanbox/user/29502669
 - id: traya
   item_image_selector: img
   item_link_selector: a
@@ -1487,38 +1503,6 @@ pages:
   item_title_selector: .post-card__header
   title: zanburotta
   url: https://kemono.su/fantia/user/16047
-- id: tsubame
-  item_image_selector: img
-  item_link_selector: a
-  item_selector: article
-  item_time_selector: time
-  item_title_selector: .post-card__header
-  title: tsubame
-  url: https://kemono.party/fanbox/user/13659153
-- id: fuchitoro
-  item_image_selector: img
-  item_link_selector: a
-  item_selector: article
-  item_time_selector: time
-  item_title_selector: .post-card__header
-  title: fuchitoro
-  url: https://kemono.party/fanbox/user/2502532
-- id: shiborikasu
-  item_image_selector: img
-  item_link_selector: a
-  item_selector: article
-  item_time_selector: time
-  item_title_selector: .post-card__header
-  title: shiborikasu
-  url: https://kemono.party/fanbox/user/5590667
-- id: jabarand
-  item_image_selector: img
-  item_link_selector: a
-  item_selector: article
-  item_time_selector: time
-  item_title_selector: .post-card__header
-  title: zerobyte
-  url: https://kemono.su/fanbox/user/13545
 - id: zettaiyarumoni
   item_image_selector: img
   item_link_selector: a
