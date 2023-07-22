@@ -375,6 +375,14 @@ pages:
   item_title_selector: .post-card__header
   title: ibukichi
   url: https://kemono.su/fanbox/user/14871
+- id: ikadaishougun
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: ikadaishougun
+  url: https://kemono.su/fanbox/user/2000913
 - id: iku
   item_image_selector: img
   item_link_selector: a
@@ -751,6 +759,14 @@ pages:
   item_title_selector: .post-card__header
   title: moisuturechichi
   url: https://kemono.su/patreon/user/3977850
+- id: mozutaro
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: mozutaro
+  url: https://kemono.su/fantia/user/347614
 - id: mudoochi
   item_image_selector: img
   item_link_selector: a
@@ -991,6 +1007,14 @@ pages:
   item_title_selector: .post-card__header
   title: redram3104
   url: https://kemono.su/fanbox/user/9748424
+- id: romtaku
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: romtaku
+  url: https://kemono.su/fanbox/user/943405
 - id: rororo-mg
   item_image_selector: img
   item_link_selector: a
@@ -1199,6 +1223,14 @@ pages:
   item_title_selector: .post-card__header
   title: sincos
   url: https://kemono.su/fanbox/user/11229342
+- id: souryuu
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: souryuu
+  url: https://kemono.su/fanbox/user/989114
 - id: sumitomo
   item_image_selector: img
   item_link_selector: a
@@ -1359,6 +1391,14 @@ pages:
   item_title_selector: .post-card__header
   title: uchiwa
   url: https://kemono.su/fanbox/user/11430485
+- id: uechin
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: uechin
+  url: https://kemono.su/fanbox/user/73666527
 - id: umekko
   item_image_selector: img
   item_link_selector: a
@@ -1479,6 +1519,14 @@ pages:
   item_title_selector: .post-card__header
   title: yukataro
   url: https://kemono.su/fanbox/user/125057
+- id: yukyou_mazomuke_
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: yukyou_mazomuke_
+  url: https://kemono.su/fanbox/user/90628284
 - id: yumekanouhanedododochan
   item_image_selector: img
   item_link_selector: a
