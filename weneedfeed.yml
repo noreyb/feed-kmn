@@ -103,6 +103,14 @@ pages:
   item_title_selector: .post-card__header
   title: baokugen
   url: https://kemono.su/fanbox/user/31285850
+- id: bginga
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: bginga
+  url: https://kemono.su/fanbox/user/9016
 - id: bubukka
   item_image_selector: img
   item_link_selector: a
@@ -439,6 +447,14 @@ pages:
   item_title_selector: .post-card__header
   title: jakudenpa
   url: https://kemono.su/fantia/user/7
+- id: jtveemo
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: jtveemo
+  url: https://kemono.su/patreon/user/17913091
 - id: jungle
   item_image_selector: img
   item_link_selector: a
