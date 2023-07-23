@@ -9,7 +9,7 @@ import yaml
 from dotenv import load_dotenv
 
 
-def get_from_raindrop(collection_id):
+def get_from_raindrop(collection_id, access_token):
     url = "https://api.raindrop.io/rest/v1"
     endpoint = "/raindrops"
     headers = {
@@ -34,7 +34,7 @@ def get_from_raindrop(collection_id):
     return resp
 
 
-def move_marked_raindrop(collection_id, items, marked):
+def move_marked_raindrop(collection_id, items, marked, access_token):
     url = "https://api.raindrop.io/rest/v1"
     endpoint = "/raindrops"
     headers = {
@@ -96,7 +96,7 @@ if __name__ == "__main__":
     unmark = int(os.getenv("UNMARK"))  # collection_id
     marked = int(os.getenv("MARKED"))
 
-    resp = get_from_raindrop(unmark)
+    resp = get_from_raindrop(unmark, access_token)
     if resp.json()["count"] == 0:
         print("There is no unmark raindrops")
         exit()
@@ -125,7 +125,7 @@ if __name__ == "__main__":
         feeds["pages"].append(page)
         raindrops.append(item["_id"])
 
-    r = move_marked_raindrop(unmark, raindrops, marked)
+    r = move_marked_raindrop(unmark, raindrops, marked, access_token)
 
     # sort pages
     pages = sorted(feeds["pages"], key=lambda x: x["id"])
