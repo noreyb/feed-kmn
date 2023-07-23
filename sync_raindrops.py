@@ -34,7 +34,7 @@ def get_from_raindrop(collection_id, access_token):
     return resp
 
 
-def move_marked_raindrop(collection_id, items, marked, access_token):
+def move_marked_raindrop(unmark, items, marked, access_token):
     url = "https://api.raindrop.io/rest/v1"
     endpoint = "/raindrops"
     headers = {
