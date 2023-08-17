@@ -519,6 +519,14 @@ pages:
   item_title_selector: .post-card__header
   title: hazamarevi
   url: https://kemono.su/fanbox/user/4708058
+- id: hentai_president
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: hentai_president
+  url: https://kemono.su/fanbox/user/62588677
 - id: hidarikiki
   item_image_selector: img
   item_link_selector: a
