@@ -1799,6 +1799,14 @@ pages:
   item_title_selector: .post-card__header
   title: sumiyao
   url: https://kemono.su/fantia/user/3359
+- id: sunsetskyline
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: sunsetskyline
+  url: https://kemono.su/patreon/user/49514388
 - id: takaman
   item_image_selector: img
   item_link_selector: a
