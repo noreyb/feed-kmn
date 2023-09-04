@@ -431,6 +431,14 @@ pages:
   item_title_selector: .post-card__header
   title: fumihiko
   url: https://kemono.su/fanbox/user/2658856
+- id: futamotsu
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: futamotsu
+  url: https://kemono.su/fanbox/user/76581015
 - id: gagarinblue
   item_image_selector: img
   item_link_selector: a
