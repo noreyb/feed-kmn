@@ -1,4 +1,12 @@
 pages:
+- id: C_buchi
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: C_buchi
+  url: https://kemono.su/fantia/user/1916
 - id: Funikuri
   item_image_selector: img
   item_link_selector: a
@@ -431,6 +439,14 @@ pages:
   item_title_selector: .post-card__header
   title: fumihiko
   url: https://kemono.su/fanbox/user/2658856
+- id: fumitan
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: fumitan
+  url: https://kemono.su/fantia/user/169824
 - id: futamotsu
   item_image_selector: img
   item_link_selector: a
