@@ -1679,6 +1679,14 @@ pages:
   item_title_selector: .post-card__header
   title: satsumesoutarou
   url: https://kemono.su/fanbox/user/13091797
+- id: senri_gan
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: senri_gan
+  url: https://kemono.su/fanbox/user/1294530
 - id: serakichi_
   item_image_selector: img
   item_link_selector: a
