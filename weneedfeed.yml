@@ -1,4 +1,20 @@
 pages:
+- id: 5nan
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: 5nan
+  url: https://kemono.su/fanbox/user/71376915
+- id: AoChoku
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: AoChoku
+  url: https://kemono.su/fanbox/user/15860216
 - id: C_buchi
   item_image_selector: img
   item_link_selector: a
@@ -31,6 +47,38 @@ pages:
   item_title_selector: .post-card__header
   title: RAITA
   url: https://kemono.su/fantia/user/160173
+- id: RIM
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: RIM
+  url: https://kemono.su/fantia/user/75198
+- id: Rinhee
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: Rinhee
+  url: https://kemono.su/fantia/user/15962
+- id: SinenSian
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: SinenSian
+  url: https://kemono.su/fanbox/user/14150916
+- id: YahYah6
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: YahYah6
+  url: https://kemono.su/fantia/user/142344
 - id: _hori_
   item_image_selector: img
   item_link_selector: a
@@ -79,6 +127,14 @@ pages:
   item_title_selector: .post-card__header
   title: abubu_nownanka
   url: https://kemono.su/fanbox/user/103703
+- id: after98
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: after98
+  url: https://kemono.su/fanbox/user/4113306
 - id: aijouriku_aiue
   item_image_selector: img
   item_link_selector: a
@@ -95,6 +151,14 @@ pages:
   item_title_selector: .post-card__header
   title: aikawaarika
   url: https://kemono.su/fanbox/user/58721796
+- id: aizenpochi
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: aizenpochi
+  url: https://kemono.su/fanbox/user/35516002
 - id: aki
   item_image_selector: img
   item_link_selector: a
@@ -159,6 +223,14 @@ pages:
   item_title_selector: .post-card__header
   title: arakure
   url: https://kemono.su/fantia/user/2047
+- id: arisenmai
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: arisenmai
+  url: https://kemono.su/fantia/user/207500
 - id: asakatsu
   item_image_selector: img
   item_link_selector: a
@@ -175,6 +247,14 @@ pages:
   item_title_selector: .post-card__header
   title: asaki
   url: https://kemono.su/fanbox/user/3775
+- id: ashiomi
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: ashiomi
+  url: https://kemono.su/fanbox/user/47617
 - id: atte_nanakusa
   item_image_selector: img
   item_link_selector: a
@@ -207,6 +287,14 @@ pages:
   item_title_selector: .post-card__header
   title: baokugen
   url: https://kemono.su/fanbox/user/31285850
+- id: beruru
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: beruru
+  url: https://kemono.su/fanbox/user/10877828
 - id: bginga
   item_image_selector: img
   item_link_selector: a
@@ -215,6 +303,14 @@ pages:
   item_title_selector: .post-card__header
   title: bginga
   url: https://kemono.su/fanbox/user/9016
+- id: bikkii
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: bikkii
+  url: https://kemono.su/fanbox/user/796850
 - id: bonsuke
   item_image_selector: img
   item_link_selector: a
@@ -303,6 +399,14 @@ pages:
   item_title_selector: .post-card__header
   title: corundum
   url: https://kemono.su/fanbox/user/17778544
+- id: cpctxfv9
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: cpctxfv9
+  url: https://kemono.su/fanbox/user/3143223
 - id: daretsuka
   item_image_selector: img
   item_link_selector: a
@@ -335,6 +439,14 @@ pages:
   item_title_selector: .post-card__header
   title: dorontabi
   url: https://kemono.su/fanbox/user/55392960
+- id: downfallofwinter
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: downfallofwinter
+  url: https://kemono.su/fanbox/user/3132951
 - id: eda
   item_image_selector: img
   item_link_selector: a
@@ -511,6 +623,14 @@ pages:
   item_title_selector: .post-card__header
   title: haguhagu
   url: https://kemono.su/fantia/user/6627
+- id: hakosaku
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: hakosaku
+  url: https://kemono.su/fantia/user/16432
 - id: hanetobu
   item_image_selector: img
   item_link_selector: a
@@ -591,6 +711,14 @@ pages:
   item_title_selector: .post-card__header
   title: hijirishiroo
   url: https://kemono.su/fantia/user/2017
+- id: himitu
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: himitu
+  url: https://kemono.su/fanbox/user/5979
 - id: himitunisitoite
   item_image_selector: img
   item_link_selector: a
@@ -599,6 +727,14 @@ pages:
   item_title_selector: .post-card__header
   title: himitunisitoite
   url: https://kemono.su/fanbox/user/4830551
+- id: homura487
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: homura487
+  url: https://kemono.su/fanbox/user/1603391
 - id: horosuke
   item_image_selector: img
   item_link_selector: a
@@ -623,6 +759,14 @@ pages:
   item_title_selector: .post-card__header
   title: hyb1043245052
   url: https://kemono.su/fanbox/user/17870444
+- id: hyouuma
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: hyouuma
+  url: https://kemono.su/fanbox/user/20235288
 - id: ibukichi
   item_image_selector: img
   item_link_selector: a
@@ -631,6 +775,14 @@ pages:
   item_title_selector: .post-card__header
   title: ibukichi
   url: https://kemono.su/fanbox/user/14871
+- id: ie
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: ie
+  url: https://kemono.su/fanbox/user/24164271
 - id: ikadaishougun
   item_image_selector: img
   item_link_selector: a
@@ -783,6 +935,14 @@ pages:
   item_title_selector: .post-card__header
   title: kakeudon
   url: https://kemono.su/fanbox/user/87293355
+- id: kakuhekiieteki89
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: kakuhekiieteki89
+  url: https://kemono.su/fanbox/user/4935155
 - id: kanzarin
   item_image_selector: img
   item_link_selector: a
@@ -879,6 +1039,14 @@ pages:
   item_title_selector: .post-card__header
   title: kindatsu
   url: https://kemono.su/fanbox/user/274961
+- id: kiraboshi
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: kiraboshi
+  url: https://kemono.su/fanbox/user/32358759
 - id: kiru
   item_image_selector: img
   item_link_selector: a
@@ -919,6 +1087,14 @@ pages:
   item_title_selector: .post-card__header
   title: kizibato123go
   url: https://kemono.su/fanbox/user/41144430
+- id: kobinbin
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: kobinbin
+  url: https://kemono.su/fanbox/user/18641488
 - id: koh_minagi
   item_image_selector: img
   item_link_selector: a
@@ -1079,6 +1255,14 @@ pages:
   item_title_selector: .post-card__header
   title: marukorondo
   url: https://kemono.su/fantia/user/5690
+- id: masamichie
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: masamichie
+  url: https://kemono.su/fanbox/user/529858
 - id: matoufu
   item_image_selector: img
   item_link_selector: a
@@ -1087,6 +1271,22 @@ pages:
   item_title_selector: .post-card__header
   title: matoufu
   url: https://kemono.su/fanbox/user/65714270
+- id: mattya604
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: mattya604
+  url: https://kemono.su/fanbox/user/36175
+- id: maze_
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: maze_
+  url: https://kemono.su/fantia/user/2522
 - id: mikomune
   item_image_selector: img
   item_link_selector: a
@@ -1103,6 +1303,14 @@ pages:
   item_title_selector: .post-card__header
   title: minakamin90
   url: https://kemono.su/fanbox/user/3974618
+- id: mitewow
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: mitewow
+  url: https://kemono.su/fanbox/user/491175
 - id: mobu45
   item_image_selector: img
   item_link_selector: a
@@ -1255,6 +1463,14 @@ pages:
   item_title_selector: .post-card__header
   title: nakayamasyu
   url: https://kemono.su/fanbox/user/13324556
+- id: namaffff
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: namaffff
+  url: https://kemono.su/fanbox/user/155610
 - id: namama
   item_image_selector: img
   item_link_selector: a
@@ -1271,6 +1487,14 @@ pages:
   item_title_selector: .post-card__header
   title: nananana
   url: https://kemono.su/fanbox/user/24571
+- id: natsu
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: natsu
+  url: https://kemono.su/fanbox/user/5556317
 - id: naze
   item_image_selector: img
   item_link_selector: a
@@ -1407,6 +1631,14 @@ pages:
   item_title_selector: .post-card__header
   title: otogitetsurou
   url: https://kemono.su/fantia/user/52698
+- id: otoo
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: otoo
+  url: https://kemono.su/fanbox/user/882387
 - id: otsumun
   item_image_selector: img
   item_link_selector: a
@@ -1423,6 +1655,14 @@ pages:
   item_title_selector: .post-card__header
   title: oyari_ashito
   url: https://kemono.su/fanbox/user/13135
+- id: paio
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: paio
+  url: https://kemono.su/fanbox/user/31940812
 - id: pepeyama
   item_image_selector: img
   item_link_selector: a
@@ -1527,6 +1767,14 @@ pages:
   item_title_selector: .post-card__header
   title: redram3104
   url: https://kemono.su/fanbox/user/9748424
+- id: rhnob5tjf
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: rhnob5tjf
+  url: https://kemono.su/fanbox/user/785872
 - id: romtaku
   item_image_selector: img
   item_link_selector: a
@@ -1575,6 +1823,14 @@ pages:
   item_title_selector: .post-card__header
   title: saebashi
   url: https://kemono.su/fanbox/user/986563
+- id: saishou
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: saishou
+  url: https://kemono.su/fanbox/user/182890
 - id: sakuno14
   item_image_selector: img
   item_link_selector: a
@@ -1759,6 +2015,22 @@ pages:
   item_title_selector: .post-card__header
   title: shinchounikansurukousatsu
   url: https://kemono.su/fantia/user/1419
+- id: shine_nabyss
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: shine_nabyss
+  url: https://kemono.su/fanbox/user/31357565
+- id: shinjiro
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: shinjiro
+  url: https://kemono.su/fanbox/user/1305253
 - id: shinogiasa
   item_image_selector: img
   item_link_selector: a
@@ -1775,6 +2047,14 @@ pages:
   item_title_selector: .post-card__header
   title: shishiotome
   url: https://kemono.su/fanbox/user/1916247
+- id: sihkygmojsn
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: sihkygmojsn
+  url: https://kemono.su/fanbox/user/12862190
 - id: simao
   item_image_selector: img
   item_link_selector: a
@@ -1791,6 +2071,14 @@ pages:
   item_title_selector: .post-card__header
   title: sincos
   url: https://kemono.su/fanbox/user/11229342
+- id: siresire
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: siresire
+  url: https://kemono.su/fantia/user/287738
 - id: soba
   item_image_selector: img
   item_link_selector: a
@@ -1935,6 +2223,14 @@ pages:
   item_title_selector: .post-card__header
   title: tomodachi
   url: https://kemono.su/fanbox/user/8898871
+- id: toru
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: toru
+  url: https://kemono.su/fanbox/user/18113761
 - id: topu2782
   item_image_selector: img
   item_link_selector: a
@@ -1951,14 +2247,6 @@ pages:
   item_title_selector: .post-card__header
   title: toraisi666
   url: https://kemono.su/fanbox/user/2886368
-- id: toru
-  item_image_selector: img
-  item_link_selector: a
-  item_selector: article
-  item_time_selector: time
-  item_title_selector: .post-card__header
-  title: toru
-  url: https://kemono.su/fanbox/user/18113761
 - id: totoro_n
   item_image_selector: img
   item_link_selector: a
@@ -2023,6 +2311,14 @@ pages:
   item_title_selector: .post-card__header
   title: umekko
   url: https://kemono.su/fanbox/user/4055454
+- id: unipiano
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: unipiano
+  url: https://kemono.su/fanbox/user/65330886
 - id: upanishinuruchiku
   item_image_selector: img
   item_link_selector: a
@@ -2063,6 +2359,14 @@ pages:
   item_title_selector: .post-card__header
   title: uyama_hajime
   url: https://kemono.su/fanbox/user/19786106
+- id: veryhardloco
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: veryhardloco
+  url: https://kemono.su/fanbox/user/63540722
 - id: wakamesan
   item_image_selector: img
   item_link_selector: a
@@ -2071,6 +2375,14 @@ pages:
   item_title_selector: .post-card__header
   title: wakamesan
   url: https://kemono.su/fanbox/user/4368958
+- id: wakura081
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: wakura081
+  url: https://kemono.su/fanbox/user/54060
 - id: whywhyman
   item_image_selector: img
   item_link_selector: a
@@ -2151,6 +2463,14 @@ pages:
   item_title_selector: .post-card__header
   title: yeun
   url: https://kemono.su/fanbox/user/70955548
+- id: yorusame
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: yorusame
+  url: https://kemono.su/fantia/user/226274
 - id: yoshimurabitchimootaa
   item_image_selector: img
   item_link_selector: a
