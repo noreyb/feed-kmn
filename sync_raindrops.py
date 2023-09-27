@@ -9,29 +9,29 @@ import yaml
 from dotenv import load_dotenv
 
 
-def get_from_raindrop(collection_id, access_token):
+def get_raindrops(collection_id, token):
     url = "https://api.raindrop.io/rest/v1"
     endpoint = "/raindrops"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {access_token}",
+        "Authorization": f"Bearer {token}",
     }
     query = {
         "perpage": 50,
     }
 
-    resp = requests.get(
+    r = requests.get(
         f"{url}{endpoint}/{collection_id}",
         headers=headers,
         params=query,
     )
 
-    if resp.status_code != requests.codes.ok:
-        print(resp.text)
+    if r.status_code != requests.codes.ok:
+        print(r.text)
         exit()
 
     time.sleep(1)
-    return resp
+    return r
 
 
 def move_marked_raindrop(unmark, items, marked, access_token):
