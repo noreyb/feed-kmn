@@ -34,29 +34,36 @@ def get_raindrops(collection_id, token):
     return r
 
 
-def move_marked_raindrop(unmark, items, marked, access_token):
+def fetch_tagged_raindrops(items, tegs, has_tag=True):
+    filtered_items = []
+    for item in items:
+        for tag in item["tags"]:
+            if tag in tags:
+                filtered_items.append(item)
+
+    if has_tag:
+        return filtered_items
+    else:
+        return [item for item in items if item["_id"] not in [fi["_id"] for fi in filtered_items]]
+
+
+def tag_raindrop(items, collection, tag, token):
     url = "https://api.raindrop.io/rest/v1"
     endpoint = "/raindrops"
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {access_token}",
-    }
-    query = {
-        # "sort": "domain",
-        # "page": 1,
-        "perpage": 50,
-        # "dengerAll": True,
-    }
-    body = {
-        "ids": items,
-        "collectionId": marked,
-    }
 
+    tags = [tag]
     resp = requests.put(
-        f"{url}{endpoint}/{unmark}",
-        headers=headers,
-        params=query,
-        json=body,
+        f"{url}{endpoint}/{collection}",
+        headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {token}",
+        },
+        params={"perpage": 50},
+        json={
+            "ids": items,
+            "collectionId": collection,
+            "tags": tags,
+        },
     )
 
     if resp.status_code != requests.codes.ok:
@@ -83,6 +90,8 @@ def unify_username(username):
 
 if __name__ == "__main__":
     load_dotenv()
+    token = os.getenv("RD_TOKEN")
+    collection = int(os.getenv("SUBSCRIBE"))
 
     with open("weneedfeed.yml", "r") as f:
         feeds = yaml.safe_load(f)
@@ -91,19 +100,17 @@ if __name__ == "__main__":
     for feed in feeds["pages"]:
         feed["url"] = feed["url"].replace("party", "su")
 
-    # Get unmarked raindrops
-    access_token = os.getenv("RAINDROPIO_ACCESS_TOKEN")
-    unmark = int(os.getenv("UNMARK"))  # collection_id
-    marked = int(os.getenv("MARKED"))
-
-    resp = get_from_raindrop(unmark, access_token)
-    if resp.json()["count"] == 0:
-        print("There is no unmark raindrops")
-        exit()
+    # Get subscribe raindrops
+    resp = get_raindrops(collection, token)
+    items = resp.json()["items"]
+    tags = ["kemono_marked"]
+    items = fetch_tagged_raindrops(items, tags, has_tag=False)
+    if len(items) == 0:
+        exit("No new item")
 
     # Get kemono.su raindrops
-    raindrops = []
-    for item in resp.json()["items"]:
+    marked_id = []
+    for item in items:
         if "kemono" not in item["domain"]:
             continue
 
@@ -123,9 +130,10 @@ if __name__ == "__main__":
             "url": f"https://kemono.su/{service}/user/{_id}",
         }
         feeds["pages"].append(page)
-        raindrops.append(item["_id"])
+        marked_id.append(item["_id"])
 
-    r = move_marked_raindrop(unmark, raindrops, marked, access_token)
+    tag = "kemono_marked"
+    r = tag_raindrop(marked_id, collection, tag, token)
 
     # sort pages
     pages = sorted(feeds["pages"], key=lambda x: x["id"])
