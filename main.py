@@ -34,7 +34,7 @@ def get_raindrops(collection_id, token):
     return r
 
 
-def fetch_tagged_raindrops(items, tegs, has_tag=True):
+def fetch_tagged_raindrops(items, tags, has_tag=True):
     filtered_items = []
     for item in items:
         for tag in item["tags"]:
