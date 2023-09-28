@@ -2223,14 +2223,6 @@ pages:
   item_title_selector: .post-card__header
   title: tomodachi
   url: https://kemono.su/fanbox/user/8898871
-- id: toru
-  item_image_selector: img
-  item_link_selector: a
-  item_selector: article
-  item_time_selector: time
-  item_title_selector: .post-card__header
-  title: toru
-  url: https://kemono.su/fanbox/user/18113761
 - id: topu2782
   item_image_selector: img
   item_link_selector: a
@@ -2247,6 +2239,14 @@ pages:
   item_title_selector: .post-card__header
   title: toraisi666
   url: https://kemono.su/fanbox/user/2886368
+- id: toru
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: toru
+  url: https://kemono.su/fanbox/user/18113761
 - id: totoro_n
   item_image_selector: img
   item_link_selector: a
