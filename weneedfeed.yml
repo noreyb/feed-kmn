@@ -335,6 +335,14 @@ pages:
   item_title_selector: .post-card__header
   title: buta_jiman
   url: https://kemono.su/fanbox/user/30902737
+- id: buttmoth
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: buttmoth
+  url: https://kemono.su/fanbox/user/5826547
 - id: c_ta
   item_image_selector: img
   item_link_selector: a
@@ -663,6 +671,14 @@ pages:
   item_title_selector: .post-card__header
   title: hazamarevi
   url: https://kemono.su/fanbox/user/4708058
+- id: hella
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: hella
+  url: https://kemono.su/fanbox/user/3329134
 - id: hentai_president
   item_image_selector: img
   item_link_selector: a
@@ -1375,6 +1391,14 @@ pages:
   item_title_selector: .post-card__header
   title: mokataki
   url: https://kemono.su/fanbox/user/2306317
+- id: monchanrev3
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: monchanrev3
+  url: https://kemono.su/fanbox/user/6511975
 - id: monpetit17
   item_image_selector: img
   item_link_selector: a
@@ -1743,6 +1767,14 @@ pages:
   item_title_selector: .post-card__header
   title: ran
   url: https://kemono.su/fanbox/user/1261374
+- id: ranchi
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: ranchi
+  url: https://kemono.su/fanbox/user/5992466
 - id: raoko
   item_image_selector: img
   item_link_selector: a
@@ -2527,6 +2559,14 @@ pages:
   item_title_selector: .post-card__header
   title: zanburotta
   url: https://kemono.su/fantia/user/16047
+- id: zb213
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: zb213
+  url: https://kemono.su/fanbox/user/61451035
 - id: zettaiyarumoni
   item_image_selector: img
   item_link_selector: a
