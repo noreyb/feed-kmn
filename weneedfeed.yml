@@ -575,6 +575,14 @@ pages:
   item_title_selector: .post-card__header
   title: futamotsu
   url: https://kemono.su/fanbox/user/76581015
+- id: gagaimo_ishida_furoran_hatsubaichuu
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: gagaimo_ishida_furoran_hatsubaichuu
+  url: https://kemono.su/fantia/user/467636
 - id: gagarinblue
   item_image_selector: img
   item_link_selector: a
