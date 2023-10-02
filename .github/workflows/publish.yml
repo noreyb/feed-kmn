@@ -18,6 +18,7 @@ jobs:
       - uses: Gr1N/setup-poetry@v8
       - run: poetry install --no-root
       - run: RD_TOKEN=${{secrets.RD_TOKEN}} SUBSCRIBE=${{secrets.SUBSCRIBE}} poetry run python main.py
+        continue-on-error:  true
       - name: Sync feeds
         continue-on-error:  true
         run: |
