@@ -183,6 +183,14 @@ pages:
   item_title_selector: .post-card__header
   title: alp315
   url: https://kemono.su/fanbox/user/1746953
+- id: amandakenny0730
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: amandakenny0730
+  url: https://kemono.su/fanbox/user/44297987
 - id: amelialtie
   item_image_selector: img
   item_link_selector: a
@@ -287,6 +295,14 @@ pages:
   item_title_selector: .post-card__header
   title: baokugen
   url: https://kemono.su/fanbox/user/31285850
+- id: bekotarou_oshigotoboshuuchuu
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: bekotarou_oshigotoboshuuchuu
+  url: https://kemono.su/fanbox/user/3345902
 - id: beruru
   item_image_selector: img
   item_link_selector: a
@@ -431,6 +447,14 @@ pages:
   item_title_selector: .post-card__header
   title: dhseijin
   url: https://kemono.su/fanbox/user/9403559
+- id: diy
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: diy
+  url: https://kemono.su/fanbox/user/60644
 - id: djheycha
   item_image_selector: img
   item_link_selector: a
@@ -703,6 +727,14 @@ pages:
   item_title_selector: .post-card__header
   title: hidarikiki
   url: https://kemono.su/patreon/user/5893088
+- id: hidarikiki
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: hidarikiki
+  url: https://kemono.su/fanbox/user/92527
 - id: hien_MAIDOLL
   item_image_selector: img
   item_link_selector: a
@@ -1335,6 +1367,14 @@ pages:
   item_title_selector: .post-card__header
   title: mitewow
   url: https://kemono.su/fanbox/user/491175
+- id: miya9
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: miya9
+  url: https://kemono.su/fanbox/user/110090
 - id: mobu45
   item_image_selector: img
   item_link_selector: a
