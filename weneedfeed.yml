@@ -63,6 +63,14 @@ pages:
   item_title_selector: .post-card__header
   title: Rinhee
   url: https://kemono.su/fantia/user/15962
+- id: SOS
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: SOS
+  url: https://kemono.su/fanbox/user/85720459
 - id: SinenSian
   item_image_selector: img
   item_link_selector: a
@@ -687,6 +695,14 @@ pages:
   item_title_selector: .post-card__header
   title: hanpatsuzokusei
   url: https://kemono.su/fanbox/user/59605893
+- id: hansube1925
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: hansube1925
+  url: https://kemono.su/fanbox/user/2681650
 - id: hayanye_r
   item_image_selector: img
   item_link_selector: a
@@ -983,6 +999,14 @@ pages:
   item_title_selector: .post-card__header
   title: kagto
   url: https://kemono.su/fanbox/user/34025740
+- id: kai
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: kai
+  url: https://kemono.su/fanbox/user/15076523
 - id: kakeudon
   item_image_selector: img
   item_link_selector: a
@@ -1319,6 +1343,14 @@ pages:
   item_title_selector: .post-card__header
   title: masamichie
   url: https://kemono.su/fanbox/user/529858
+- id: matai
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: matai
+  url: https://kemono.su/fanbox/user/3678533
 - id: matoufu
   item_image_selector: img
   item_link_selector: a
