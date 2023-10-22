@@ -15,6 +15,14 @@ pages:
   item_title_selector: .post-card__header
   title: AoChoku
   url: https://kemono.su/fanbox/user/15860216
+- id: Bygin_shirohaba
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: Bygin_shirohaba
+  url: https://kemono.su/fanbox/user/13795156
 - id: C_buchi
   item_image_selector: img
   item_link_selector: a
@@ -335,6 +343,14 @@ pages:
   item_title_selector: .post-card__header
   title: bikkii
   url: https://kemono.su/fanbox/user/796850
+- id: biro_budou
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: biro_budou
+  url: https://kemono.su/fanbox/user/35875534
 - id: bonsuke
   item_image_selector: img
   item_link_selector: a
@@ -623,6 +639,22 @@ pages:
   item_title_selector: .post-card__header
   title: gagarinblue
   url: https://kemono.su/fanbox/user/735286
+- id: gamarenji
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: gamarenji
+  url: https://kemono.su/fanbox/user/71184856
+- id: gaolukchup
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: gaolukchup
+  url: https://kemono.su/fanbox/user/12305986
 - id: gingaaji
   item_image_selector: img
   item_link_selector: a
@@ -943,6 +975,14 @@ pages:
   item_title_selector: .post-card__header
   title: jakudenpa
   url: https://kemono.su/fantia/user/7
+- id: jirooo
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: jirooo
+  url: https://kemono.su/fanbox/user/39575727
 - id: jonsun
   item_image_selector: img
   item_link_selector: a
@@ -1047,6 +1087,14 @@ pages:
   item_title_selector: .post-card__header
   title: kara_shin_
   url: https://kemono.su/fanbox/user/140960
+- id: karaagebo
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: karaagebo
+  url: https://kemono.su/fanbox/user/23606858
 - id: kawacy
   item_image_selector: img
   item_link_selector: a
@@ -1063,6 +1111,14 @@ pages:
   item_title_selector: .post-card__header
   title: kawaraya
   url: https://kemono.su/fanbox/user/14074088
+- id: kawasaki
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: kawasaki
+  url: https://kemono.su/fanbox/user/93077362
 - id: kbrg
   item_image_selector: img
   item_link_selector: a
@@ -1471,6 +1527,14 @@ pages:
   item_title_selector: .post-card__header
   title: mokataki
   url: https://kemono.su/fanbox/user/2306317
+- id: momomomomo00
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: momomomomo00
+  url: https://kemono.su/fanbox/user/45039349
 - id: monchanrev3
   item_image_selector: img
   item_link_selector: a
@@ -1719,6 +1783,14 @@ pages:
   item_title_selector: .post-card__header
   title: oouso
   url: https://kemono.su/fantia/user/3040
+- id: orzcan
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: orzcan
+  url: https://kemono.su/fanbox/user/8307536
 - id: osoba_gou
   item_image_selector: img
   item_link_selector: a
@@ -1887,6 +1959,14 @@ pages:
   item_title_selector: .post-card__header
   title: rhnob5tjf
   url: https://kemono.su/fanbox/user/785872
+- id: rikoshietto
+  item_image_selector: img
+  item_link_selector: a
+  item_selector: article
+  item_time_selector: time
+  item_title_selector: .post-card__header
+  title: rikoshietto
+  url: https://kemono.su/fanbox/user/66409778
 - id: romtaku
   item_image_selector: img
   item_link_selector: a
