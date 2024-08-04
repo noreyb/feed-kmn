@@ -7,10 +7,10 @@ import pykakasi
 import requests
 import yaml
 from dotenv import load_dotenv
-from repository.raindropio import RaindropIO
+
 from domain.raindrop import Raindrop
 from domain.raindrop_id import RaindropId
-
+from repository.raindropio import RaindropIO
 
 # def get_raindrops(collection_id, token):
 #     url = "https://api.raindrop.io/rest/v1"
@@ -22,17 +22,17 @@ from domain.raindrop_id import RaindropId
 #     query = {
 #         "perpage": 50,
 #     }
-# 
+#
 #     r = requests.get(
 #         f"{url}{endpoint}/{collection_id}",
 #         headers=headers,
 #         params=query,
 #     )
-# 
+#
 #     if r.status_code != requests.codes.ok:
 #         print(r.text)
 #         raise Exception()
-# 
+#
 #     time.sleep(1)
 #     return r
 
@@ -43,7 +43,7 @@ from domain.raindrop_id import RaindropId
 #         for tag in item["tags"]:
 #             if tag in tags:
 #                 filtered_items.append(item)
-# 
+#
 #     if has_tag:
 #         return filtered_items
 #     else:
@@ -87,7 +87,7 @@ def unify_username(username):
         if result != "":
             result += "_"
         result += u["hepburn"]
-    result = re.sub(r'[^a-zA-Z0-9_]', "", result)
+    result = re.sub(r"[^a-zA-Z0-9_]", "", result)
     print(result)
     return result
 
@@ -115,7 +115,7 @@ if __name__ == "__main__":
     # resp = get_raindrops(collection, token)
 
     # items = resp.json()["items"]
-    #items = fetch_tagged_raindrops(items, tags, has_tag=False)
+    # items = fetch_tagged_raindrops(items, tags, has_tag=False)
     tags = ["kemono_marked"]
     target_raindrops = []
     for r in raindrops:
@@ -154,16 +154,16 @@ if __name__ == "__main__":
         feeds["pages"].append(page)
         marked_id.append(
             Raindrop(
-                link = r.link,
-                _id = RaindropId(raindrop_id),
+                link=r.link,
+                _id=RaindropId(raindrop_id),
             )
         )
 
     tag = ["kemono_marked"]
     handler.bulk_update_tags(
-        src_collection_id = collection,
-        tags = tags,
-        raindrops = marked_id,
+        src_collection_id=collection,
+        tags=tags,
+        raindrops=marked_id,
     )
     # r = tag_raindrop(marked_id, collection, tag, token)
 
