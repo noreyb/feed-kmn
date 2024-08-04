@@ -12,70 +12,6 @@ from domain.raindrop import Raindrop
 from domain.raindrop_id import RaindropId
 from repository.raindropio import RaindropIO
 
-# def get_raindrops(collection_id, token):
-#     url = "https://api.raindrop.io/rest/v1"
-#     endpoint = "/raindrops"
-#     headers = {
-#         "Content-Type": "application/json",
-#         "Authorization": f"Bearer {token}",
-#     }
-#     query = {
-#         "perpage": 50,
-#     }
-#
-#     r = requests.get(
-#         f"{url}{endpoint}/{collection_id}",
-#         headers=headers,
-#         params=query,
-#     )
-#
-#     if r.status_code != requests.codes.ok:
-#         print(r.text)
-#         raise Exception()
-#
-#     time.sleep(1)
-#     return r
-
-
-# def fetch_tagged_raindrops(items, tags, has_tag=True):
-#     filtered_items = []
-#     for item in items:
-#         for tag in item["tags"]:
-#             if tag in tags:
-#                 filtered_items.append(item)
-#
-#     if has_tag:
-#         return filtered_items
-#     else:
-#         return [item for item in items if item["_id"] not in [fi["_id"] for fi in filtered_items]]
-
-
-def tag_raindrop(items, collection, tag, token):
-    url = "https://api.raindrop.io/rest/v1"
-    endpoint = "/raindrops"
-
-    tags = [tag]
-    resp = requests.put(
-        f"{url}{endpoint}/{collection}",
-        headers={
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {token}",
-        },
-        params={"perpage": 50},
-        json={
-            "ids": items,
-            "collectionId": collection,
-            "tags": tags,
-        },
-    )
-
-    if resp.status_code != requests.codes.ok:
-        print(resp.text)
-        exit(1)
-
-    time.sleep(1)
-    return resp
-
 
 def unify_username(username):
     # name to id
@@ -112,10 +48,7 @@ if __name__ == "__main__":
     # Get subscribe raindrops
     handler = RaindropIO(token)
     raindrops = handler.bulk_get_all(collection)
-    # resp = get_raindrops(collection, token)
 
-    # items = resp.json()["items"]
-    # items = fetch_tagged_raindrops(items, tags, has_tag=False)
     tags = ["kemono_marked"]
     target_raindrops = []
     for r in raindrops:
@@ -129,9 +62,6 @@ if __name__ == "__main__":
     for r in raindrops:
         raindrop_id = r._id
         print(raindrop_id)
-
-        # if "kemono" not in domain:
-        #     continue
 
         if not is_valid_url(r.link):
             continue
@@ -165,7 +95,6 @@ if __name__ == "__main__":
         tags=tags,
         raindrops=marked_id,
     )
-    # r = tag_raindrop(marked_id, collection, tag, token)
 
     # sort pages
     pages = sorted(feeds["pages"], key=lambda x: x["id"])
