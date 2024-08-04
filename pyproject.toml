@@ -8,7 +8,7 @@ packages = [{include = "feed_kmn"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-pyyaml = "^6.0"
+pyyaml = "^6.0.1"
 requests = "^2.31.0"
 python-dotenv = "^1.0.0"
 pykakasi = "^2.2.1"

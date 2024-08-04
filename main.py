@@ -7,44 +7,47 @@ import pykakasi
 import requests
 import yaml
 from dotenv import load_dotenv
+from repository.raindropio import RaindropIO
+from domain.raindrop import Raindrop
+from domain.raindrop_id import RaindropId
 
 
-def get_raindrops(collection_id, token):
-    url = "https://api.raindrop.io/rest/v1"
-    endpoint = "/raindrops"
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {token}",
-    }
-    query = {
-        "perpage": 50,
-    }
+# def get_raindrops(collection_id, token):
+#     url = "https://api.raindrop.io/rest/v1"
+#     endpoint = "/raindrops"
+#     headers = {
+#         "Content-Type": "application/json",
+#         "Authorization": f"Bearer {token}",
+#     }
+#     query = {
+#         "perpage": 50,
+#     }
+# 
+#     r = requests.get(
+#         f"{url}{endpoint}/{collection_id}",
+#         headers=headers,
+#         params=query,
+#     )
+# 
+#     if r.status_code != requests.codes.ok:
+#         print(r.text)
+#         raise Exception()
+# 
+#     time.sleep(1)
+#     return r
 
-    r = requests.get(
-        f"{url}{endpoint}/{collection_id}",
-        headers=headers,
-        params=query,
-    )
 
-    if r.status_code != requests.codes.ok:
-        print(r.text)
-        exit()
-
-    time.sleep(1)
-    return r
-
-
-def fetch_tagged_raindrops(items, tags, has_tag=True):
-    filtered_items = []
-    for item in items:
-        for tag in item["tags"]:
-            if tag in tags:
-                filtered_items.append(item)
-
-    if has_tag:
-        return filtered_items
-    else:
-        return [item for item in items if item["_id"] not in [fi["_id"] for fi in filtered_items]]
+# def fetch_tagged_raindrops(items, tags, has_tag=True):
+#     filtered_items = []
+#     for item in items:
+#         for tag in item["tags"]:
+#             if tag in tags:
+#                 filtered_items.append(item)
+# 
+#     if has_tag:
+#         return filtered_items
+#     else:
+#         return [item for item in items if item["_id"] not in [fi["_id"] for fi in filtered_items]]
 
 
 def tag_raindrop(items, collection, tag, token):
@@ -77,15 +80,21 @@ def tag_raindrop(items, collection, tag, token):
 def unify_username(username):
     # name to id
     kakasi = pykakasi.kakasi()
-    kakasi.setMode("H", "a")
-    kakasi.setMode("K", "a")
-    kakasi.setMode("J", "a")
-    conv = kakasi.getConverter()
+    username = kakasi.convert(username)
 
-    username = conv.do(username)
-    pattern = r"[^a-zA-Z0-9]"
-    username = re.sub(pattern, "_", username)
-    return username
+    result = ""
+    for u in username:
+        if result != "":
+            result += "_"
+        result += u["hepburn"]
+    result = re.sub(r'[^a-zA-Z0-9_]', "", result)
+    print(result)
+    return result
+
+
+def is_valid_url(url):
+    pattern = r"^https://kemono\.su/(patreon|fantia|fanbox)/user/\d+$"
+    return bool(re.match(pattern, url))
 
 
 if __name__ == "__main__":
@@ -101,23 +110,36 @@ if __name__ == "__main__":
         feed["url"] = feed["url"].replace("party", "su")
 
     # Get subscribe raindrops
-    resp = get_raindrops(collection, token)
-    items = resp.json()["items"]
+    handler = RaindropIO(token)
+    raindrops = handler.bulk_get_all(collection)
+    # resp = get_raindrops(collection, token)
+
+    # items = resp.json()["items"]
+    #items = fetch_tagged_raindrops(items, tags, has_tag=False)
     tags = ["kemono_marked"]
-    items = fetch_tagged_raindrops(items, tags, has_tag=False)
-    if len(items) == 0:
-        exit("No new item")
+    target_raindrops = []
+    for r in raindrops:
+        if set(r.tags) <= set(tags):
+            target_raindrops.append(r)
+    if len(target_raindrops) == 0:
+        raise Exception("No new item")
 
     # Get kemono.su raindrops
     marked_id = []
-    for item in items:
-        if "kemono" not in item["domain"]:
+    for r in raindrops:
+        raindrop_id = r._id
+        print(raindrop_id)
+
+        # if "kemono" not in domain:
+        #     continue
+
+        if not is_valid_url(r.link):
             continue
 
-        parsed = urlparse(item["link"])
+        parsed = urlparse(r.link)
         service = parsed.path.split("/")[1]
         _id = parsed.path.split("/")[3]
-        username = unify_username(item["title"].split(" ")[2])
+        username = unify_username(r.title.split(" ")[2])
 
         page = {
             "id": f"{username}",
@@ -130,10 +152,20 @@ if __name__ == "__main__":
             "url": f"https://kemono.su/{service}/user/{_id}",
         }
         feeds["pages"].append(page)
-        marked_id.append(item["_id"])
+        marked_id.append(
+            Raindrop(
+                link = r.link,
+                _id = RaindropId(raindrop_id),
+            )
+        )
 
-    tag = "kemono_marked"
-    r = tag_raindrop(marked_id, collection, tag, token)
+    tag = ["kemono_marked"]
+    handler.bulk_update_tags(
+        src_collection_id = collection,
+        tags = tags,
+        raindrops = marked_id,
+    )
+    # r = tag_raindrop(marked_id, collection, tag, token)
 
     # sort pages
     pages = sorted(feeds["pages"], key=lambda x: x["id"])
